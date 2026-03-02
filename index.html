@@ -4,132 +4,202 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jason Radisson</title>
-<meta name="description" content="CEO and Founder of Movo. Builder of technology companies across the US, Europe, and Latin America.">
+<meta name="description" content="CEO and Founder of Movo. Proof-of-presence infrastructure for healthcare compliance. Board Trustee, American Public Media Group. Host, CEO Tradecraft.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Jason Radisson">
+<meta property="og:description" content="CEO and Founder of Movo. Proof-of-presence infrastructure for healthcare compliance. Board Trustee, APMG/MPR. Host, CEO Tradecraft.">
+<meta property="og:image" content="https://jasonradisson.com/jason-radisson-photo.jpg">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://jasonradisson.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jason Radisson">
+<meta name="twitter:description" content="CEO and Founder of Movo. Proof-of-presence infrastructure for healthcare compliance.">
+<meta name="twitter:image" content="https://jasonradisson.com/jason-radisson-photo.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JR</text></svg>">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#FAFAF8;--text:#1A1A1A;--text-secondary:#4A4A4A;--text-tertiary:#7A7A7A;--rule:#D4D2CB;--serif:'Source Serif 4',Georgia,serif;--sans:'Inter',-apple-system,sans-serif}
-html{font-size:18px;scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--serif);line-height:1.7;-webkit-font-smoothing:antialiased}
-.container{max-width:680px;margin:0 auto;padding:0 2rem}
-header{padding:6rem 0 4rem;border-bottom:1px solid var(--rule)}
-header h1{font-family:var(--serif);font-size:3rem;font-weight:700;letter-spacing:-0.02em;line-height:1.1;margin-bottom:1.5rem}
-header .descriptor{font-family:var(--sans);font-size:0.85rem;font-weight:400;color:var(--text-secondary);letter-spacing:0.03em;text-transform:uppercase;line-height:1.8}
-section{padding:3.5rem 0;border-bottom:1px solid var(--rule)}
+html{font-size:17px;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--serif);line-height:1.7;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.container{max-width:660px;margin:0 auto;padding:0 2rem}
+
+/* Header */
+header{padding:5rem 0 3.5rem;border-bottom:1px solid var(--rule)}
+.header-content{display:flex;gap:2.2rem;align-items:flex-start}
+.headshot{width:130px;height:130px;border-radius:50%;object-fit:cover;flex-shrink:0;filter:grayscale(15%)}
+.header-text h1{font-family:var(--serif);font-size:2.8rem;font-weight:700;letter-spacing:-0.02em;line-height:1.1;margin-bottom:1rem}
+.header-text .descriptor{font-family:var(--sans);font-size:0.82rem;font-weight:400;color:var(--text-secondary);letter-spacing:0.04em;text-transform:uppercase;line-height:1.9}
+
+/* Sections */
+section{padding:3rem 0;border-bottom:1px solid var(--rule)}
 section:last-of-type{border-bottom:none}
-section h2{font-family:var(--sans);font-size:0.72rem;font-weight:500;text-transform:uppercase;letter-spacing:0.12em;color:var(--text-tertiary);margin-bottom:1.5rem}
-section p{margin-bottom:1.2rem;font-size:1rem;font-weight:300;color:var(--text)}
+section h2{font-family:var(--sans);font-size:0.68rem;font-weight:500;text-transform:uppercase;letter-spacing:0.13em;color:var(--text-tertiary);margin-bottom:1.4rem}
+section p{margin-bottom:1.15rem;font-size:1rem;font-weight:400;color:var(--text)}
 section p:last-child{margin-bottom:0}
+
+/* Credentials grid */
 .credentials{display:grid;grid-template-columns:1fr 1fr;gap:2rem 3rem;margin-top:0.5rem}
-.credential-group h3{font-family:var(--sans);font-size:0.7rem;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-tertiary);margin-bottom:0.6rem}
-.credential-group p{font-size:0.92rem;font-weight:300;margin-bottom:0.35rem;line-height:1.55}
+.credential-group h3{font-family:var(--sans);font-size:0.67rem;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-tertiary);margin-bottom:0.55rem}
+.credential-group p{font-size:0.88rem;font-weight:400;margin-bottom:0.3rem;line-height:1.55;font-family:var(--sans)}
+
+/* Media list */
 .media-list{margin-top:0.5rem}
-.media-item{padding:1rem 0;border-bottom:1px solid var(--rule)}
+.media-item{padding:0.9rem 0;border-bottom:1px solid var(--rule)}
 .media-item:last-child{border-bottom:none}
-.media-item a{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--text);text-decoration:none;border-bottom:1px solid var(--rule);transition:border-color 0.2s}
+.media-item a{font-family:var(--serif);font-size:0.95rem;color:var(--text);text-decoration:none;border-bottom:1px solid var(--rule);transition:border-color 0.2s}
 .media-item a:hover{border-color:var(--text)}
-.media-item .meta{font-family:var(--sans);font-size:0.75rem;color:var(--text-tertiary);margin-top:0.3rem}
-.contact-links{display:flex;gap:2rem;margin-top:0.5rem;flex-wrap:wrap}
-.contact-links a{font-family:var(--sans);font-size:0.85rem;font-weight:400;color:var(--text-secondary);text-decoration:none;border-bottom:1px solid var(--rule);transition:border-color 0.2s,color 0.2s}
+.media-item .meta{font-family:var(--sans);font-size:0.72rem;color:var(--text-tertiary);margin-top:0.25rem}
+
+/* Contact */
+.contact-links{display:flex;gap:1.8rem;margin-top:0.5rem;flex-wrap:wrap}
+.contact-links a{font-family:var(--sans);font-size:0.82rem;color:var(--text-secondary);text-decoration:none;border-bottom:1px solid var(--rule);transition:border-color 0.2s,color 0.2s}
 .contact-links a:hover{color:var(--text);border-color:var(--text)}
-footer{padding:3rem 0;text-align:center}
-footer p{font-family:var(--sans);font-size:0.72rem;color:var(--text-tertiary);letter-spacing:0.02em}
-@media(max-width:600px){html{font-size:16px}header{padding:4rem 0 3rem}header h1{font-size:2.2rem}.credentials{grid-template-columns:1fr;gap:1.5rem}section{padding:2.5rem 0}}
+
+/* Footer */
+footer{padding:2.5rem 0;text-align:center}
+footer p{font-family:var(--sans);font-size:0.7rem;color:var(--text-tertiary);letter-spacing:0.02em}
+
+/* Responsive */
+@media(max-width:600px){
+html{font-size:15px}
+header{padding:3.5rem 0 2.5rem}
+.header-content{flex-direction:column;align-items:center;text-align:center;gap:1.5rem}
+.headshot{width:110px;height:110px}
+.header-text h1{font-size:2rem}
+.credentials{grid-template-columns:1fr;gap:1.5rem}
+section{padding:2.2rem 0}
+}
 </style>
 </head>
 <body>
 <div class="container">
 
 <header>
+<div class="header-content">
+<img src="jason-radisson-photo.jpg" alt="Jason Radisson" class="headshot" width="130" height="130">
+<div class="header-text">
 <h1>Jason Radisson</h1>
-<p class="descriptor">CEO &amp; Founder, Movo &middot; Board Director &middot; Investor<br>Minneapolis &middot; Previously Germany, Spain, Brazil</p>
+<p class="descriptor">CEO &amp; Founder, Movo &#183; Fulbright Scholar &#183; McKinsey &#183; Five $1B+ tech outcomes<br>Edina, Minnesota</p>
+</div>
+</div>
 </header>
 
+<!-- ABOUT -->
 <section>
-<h2>Bio</h2>
-<p>I grew up as the only child of a 16-year-old single mother in rural Massachusetts, working frontline jobs to pay for school. That background shaped everything that followed: a Fulbright scholarship to Germany, graduate work at Harvard, and a career spent building technology companies that serve the people who do the work.</p>
-<p>I started at McKinsey &amp; Company, spending a decade on technology M&amp;A and organizational design across Spain, Germany, and Latin America. I then joined Uber as a Regional General Manager, launching cities across the western United States. From there, I became COO of 99, Brazil's leading rideshare platform, where my team and I grew the business 10x on $50M in invested capital and sold it to Didi Chuxing for $1B: Latin America's most capital-efficient gig marketplace exit at the time. I also served as EVP of Avira, Germany's largest private software company (now part of NortonLifeLock), overseeing consumer products for 300 million active users.</p>
-<p>More than 20 venture-backed CEOs are alumni of teams I have built and led.</p>
+<h2>About</h2>
+<p>I'm building Movo to help healthcare providers and government programs prove that services were actually delivered, so good operators get paid and bad actors can't hide. GPS-based verification fails most of the time: 56% match rate for Medicaid personal care, 11% for home health. Good agencies lose revenue to denied claims for work they actually did. State programs built on the honor system get exploited until prosecutors show up. Movo delivers hardware-anchored proof of presence: verifiable, privacy-preserving confirmation of who was where and when. No cameras, no spyware. Providers tap in, deliver care, tap out. Documentation happens automatically. In 60 days, agencies typically see denied claims drop 30-50%, audit exceptions fall 40-60%, and match rates exceed 95%.</p>
+<p>I grew up in rural Western Massachusetts. My mom had me at 16 and worked all shifts to lift us out of poverty. I paid for school as a night janitor, security guard, short-order cook, warehouse picker/packer, industrial mechanic, and HVAC tech. A Fulbright scholarship to Germany, graduate work at Harvard, and a career spent building technology companies that create jobs and serve the people who do the work.</p>
+<p>Before Movo, I helped build multiple tech unicorns and led them to life-changing exits for investors and employees, across platforms that created millions of jobs: as COO at 99 (Latin America's first unicorn, $1B exit to DiDi) and as an early investor and hands-on advisor (interim COO, interim CMO) to the founders at Rappi. Before that I served as a Regional General Manager on Uber's West Coast leadership team, and I helped scale Avira across Europe and Asia (EVP, Consumer; acquired by Norton). I currently serve on multiple boards, including American Public Media / Minnesota Public Radio.</p>
+<p>The company also operates Movo Frontline, autonomous workforce management software serving 700,000+ daily users across logistics, healthcare, manufacturing, and hospitality. Backed by Soma Capital, Gaingels, City Light Capital, and operators including Jenny Fleiss (Rent the Runway) and Rich Williams (Groupon).</p>
+<p>I am a descendant of Pierre-Esprit Radisson, the French-Canadian explorer who co-founded the Hudson's Bay Company and mapped the upper Mississippi. My family's roots in this region predate the state of Minnesota itself, and my choice to build here is intentional.</p>
+<p>If healthcare compliance, service delivery verification, or government program integrity are on your 2026 roadmap, DM me, or write to <a href="mailto:hello@movo.co">hello@movo.co</a>.</p>
 </section>
 
+<!-- SELECTED MEDIA -->
 <section>
-<h2>Movo</h2>
-<p>Movo is compliance infrastructure for organizations that need to prove their workforce policies are actually being followed. We provide real-time location verification and auditable compliance records for hybrid work policies, using sensor fusion technology through existing WiFi and mobile device infrastructure. Our clients are primarily in healthcare and government, where policy enforcement is a regulatory requirement, not a preference.</p>
-<p>The company serves nearly 100 customers with approximately 700,000 workers on the platform, and is backed by SHRM, the Society for Human Resource Management.</p>
+<h2>Selected Media</h2>
+<div class="media-list">
+<div class="media-item">
+<a href="https://www.nytimes.com/2017/05/08/business/dealbook/softbank-99-brazil-investment.html" target="_blank" rel="noopener">99 Raises from SoftBank Ahead of $1B Exit</a>
+<div class="meta">New York Times DealBook &#183; May 2017</div>
+</div>
+<div class="media-item">
+<a href="https://techcrunch.com/2018/01/03/report-chinas-didi-to-buy-brazils-99-in-1b-deal-to-take-on-latin-america/" target="_blank" rel="noopener">DiDi Acquires 99 for $1B to Take on Latin America</a>
+<div class="meta">TechCrunch &#183; January 2018</div>
+</div>
+<div class="media-item">
+<a href="https://techcrunch.com/2021/02/16/uber-vet-raises-5-2m-for-blue-collar-logistics-marketplace/" target="_blank" rel="noopener">Uber Vet Raises $5.2M for Blue-Collar Logistics Marketplace</a>
+<div class="meta">TechCrunch &#183; February 2021</div>
+</div>
+<div class="media-item">
+<a href="https://www.marketplace.org/2016/01/08/ces-2016-where-biggest-innovation-may-be-uber/" target="_blank" rel="noopener">CES 2016: Where the Biggest Innovation May Be Uber</a>
+<div class="meta">Marketplace (APM) &#183; January 2016</div>
+</div>
+<div class="media-item">
+<a href="https://www.businessinsider.com/most-promising-b2b-marketplaces-according-to-top-investors-2022-11" target="_blank" rel="noopener">23 Most Promising B2B Marketplaces of 2022</a>
+<div class="meta">Business Insider &#183; November 2022</div>
+</div>
+<div class="media-item">
+<a href="https://www.darkreading.com/cloud-security/avira-partners-with-dropbox-to-bring-secure-sync-and-share-to-millions-around-the-globe" target="_blank" rel="noopener">Avira Partners with Dropbox to Bring Secure Sync and Share to Millions</a>
+<div class="meta">Dark Reading &#183; September 2014</div>
+</div>
+</div>
 </section>
 
+<!-- STARTUPS & ECOSYSTEM -->
+<section>
+<h2>Building Minnesota's Tech Economy</h2>
+<p>More than 20 venture-backed founders and CEOs are alumni of teams I have built. I have made more than a dozen angel investments, almost exclusively in founders from my former scaleups. The most prominent is Rappi, where I was an early investor and served as interim COO and CMO at different inflection points as the company expanded from Colombia into nine countries. Several of those portfolio founders have gone on to build companies including Frubana, Truora, Ontop, and Liftit.</p>
+<p>During the years I was operating in S&#227;o Paulo and Bogot&#225;, I was actively building and investing in the startup ecosystems in those cities. Previous board and advisory roles include the Otto Group ($12B, Hamburg), Scout24 (Munich), eCircle (acquired by Teradata), and Gap, Inc.</p>
+</section>
+
+<!-- BOARD & CIVIC -->
 <section>
 <h2>Board &amp; Civic</h2>
-<p>I serve on the Board of Trustees of Minnesota Public Radio and American Public Media Group, sitting on the Finance and Audience committees. Previous board service includes Gap Inc., Germany's Otto Group, Scout24, and eCircle (now Teradata).</p>
-<p>I am engaged in economic development work in Minnesota, focused on improving the state's business formation rate and building a stronger startup ecosystem in the Upper Midwest.</p>
+<p>I serve on the Board of Trustees of American Public Media Group and Minnesota Public Radio, the largest owner and operator of public radio in the United States (20M+ weekly listeners, all 50 states). I sit on the Finance and Planning &amp; Audience Services committees. APMG produces Marketplace, Performance Today, and distributes BBC World Service.</p>
+<p>I am an active advisor to lawmakers and founders working to build Minnesota's technology ecosystem. My broader interests center on civil society, information transparency, and conservation, with the aim of leaving a better foundation for the next generation.</p>
 </section>
 
+<!-- CEO TRADECRAFT -->
 <section>
-<h2>Education &amp; Credentials</h2>
+<h2>CEO Tradecraft</h2>
+<p>A podcast about what it actually takes to lead a company when the answers aren't obvious. Each episode is a conversation with a CEO or senior operator about how they make decisions under pressure, scale teams, and navigate the politics of the job. The plays that matter in business rarely get talked about or passed down. That's what this show is for.</p>
+<p>Guests include Rich Williams (former CEO, Groupon), Mike Linton (five-time CMO: eBay, Best Buy, Farmers Insurance), Dr. Ken Holmen (President and CEO, CentraCare), and Mary Brainerd (former President and CEO, HealthPartners). Several episodes have exceeded 100,000 views. Streaming on Apple Podcasts, YouTube, and Spotify.</p>
+</section>
+
+<!-- EDUCATION & CREDENTIALS -->
+<section>
+<h2>Credentials &amp; Personal</h2>
 <div class="credentials">
 <div class="credential-group">
 <h3>Education</h3>
-<p>Stanford Graduate School of Business</p>
+<p>Stanford Graduate School of Business, post-graduate coursework</p>
 <p>Harvard University, PhD coursework in Economics</p>
 <p>Universidad Complutense de Madrid, Master of Laws</p>
-<p>University of G&ouml;ttingen, Fulbright Scholar</p>
+<p>University of G&#246;ttingen, Fulbright Scholar</p>
 <p>College of the Holy Cross, BA with highest honors</p>
 </div>
 <div class="credential-group">
 <h3>Languages</h3>
 <p>English (native)</p>
-<p>German (fluent; 10 years in Germany)</p>
-<p>Spanish (fluent; 4 years in Madrid)</p>
+<p>German (fluent; nearly a decade in Germany)</p>
+<p>Spanish (fluent; four years in Madrid)</p>
 </div>
 <div class="credential-group">
-<h3>Investments</h3>
-<p>Rappi (early investor &amp; advisor)</p>
-<p>Nok Recommerce</p>
-<p>Estoca</p>
+<h3>Recognition</h3>
+<p>Fulbright Scholar</p>
+<p>Ken Ernst Award (Accenture, top U.S. client impact)</p>
+<p>SHRM strategic investment in Movo</p>
 </div>
 <div class="credential-group">
 <h3>Personal</h3>
-<p>Minneapolis/Edina, Minnesota</p>
-<p>Married; father of four</p>
-<p>Runner, cyclist, skier</p>
+<p>Edina, Minnesota</p>
+<p>Father of four</p>
+<p>Bowhunter, marathon runner, fly fisherman, paddler</p>
+<p>Boundary Waters Canoe Area</p>
 </div>
 </div>
 </section>
 
-<section>
-<h2>Selected Media</h2>
-<div class="media-list">
-<div class="media-item">
-<a href="https://www.mpr.org/stories/2024/12/09/minnesota-public-radio-elects-jeff-lin-and-jason-radisson-to-board-of-trustees" target="_blank" rel="noopener">MPR Board of Trustees Announcement</a>
-<div class="meta">Minnesota Public Radio &middot; December 2024</div>
-</div>
-<div class="media-item">
-<a href="https://saasclub.io/podcast/movo-jason-radisson-409/" target="_blank" rel="noopener">Lessons from Growing a SaaS in Tough Industries</a>
-<div class="meta">SaaS Club &middot; August 2024</div>
-</div>
-<div class="media-item">
-<a href="https://www.disruptiveceonation.com/episode-247-empowering-the-frontline-workforce-with-jason-radisson-ceo-and-founder-of-movo-san-fr/" target="_blank" rel="noopener">Empowering the Frontline Workforce</a>
-<div class="meta">Disruptive CEO Nation &middot; May 2024</div>
-</div>
-<div class="media-item">
-<a href="https://valueinspiration.com/jason-radisson/" target="_blank" rel="noopener">Taking on Traditional HRtech</a>
-<div class="meta">Value Inspiration &middot; September 2023</div>
-</div>
-</div>
-</section>
-
+<!-- CONTACT -->
 <section>
 <h2>Contact</h2>
 <div class="contact-links">
 <a href="https://www.linkedin.com/in/jason-radisson/" target="_blank" rel="noopener">LinkedIn</a>
 <a href="https://movo.co" target="_blank" rel="noopener">Movo</a>
-<a href="mailto:jason@movo.co">jason@movo.co</a>
+<a href="https://www.youtube.com/@ceotradecraft" target="_blank" rel="noopener">CEO Tradecraft</a>
+<a href="mailto:hello@movo.co">hello@movo.co</a>
 </div>
 </section>
 
 </div>
-<footer><p>&copy; 2026 Jason Radisson</p></footer>
+<footer><p>&#169; 2026 Jason Radisson</p></footer>
 </body>
 </html>
