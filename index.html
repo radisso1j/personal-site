@@ -23,10 +23,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#FAFAF8;--text:#1A1A1A;--text-secondary:#4A4A4A;--text-tertiary:#7A7A7A;--rule:#D4D2CB;--serif:'Source Serif 4',Georgia,serif;--sans:'Inter',-apple-system,sans-serif}
+:root{--bg:#FAFAF8;--text:#1A1A1A;--text-secondary:#4A4A4A;--text-tertiary:#636363;--rule:#D4D2CB;--serif:'Source Serif 4',Georgia,serif;--sans:'Inter',-apple-system,sans-serif}
 html{font-size:17px;scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--serif);line-height:1.7;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .container{max-width:660px;margin:0 auto;padding:0 2rem}
@@ -125,6 +126,7 @@ section{padding:2.2rem 0}
 </div>
 </header>
 
+<main>
 <!-- ABOUT -->
 <section>
 <h2>About</h2>
@@ -231,6 +233,7 @@ section{padding:2.2rem 0}
 </div>
 </section>
 
+</main>
 </div>
 
 <footer>
